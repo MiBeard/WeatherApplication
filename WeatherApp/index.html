@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App Assignment</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body style='background-color:#779670; padding-bottom:50px'>
+
+    <div class='jumbotron' style='margin-bottom:0px; color:white; 
+    background-image:url(https://static.pexels.com/photos/268854/pexels-photo-268854.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    '>
+        <h2 class='text-center' style='font-size:50px; font-weight:425'>WeatherPath</h2>
+    </div>
+
+    <div class='container; text-center'>
+
+        <div class='row'>
+            <h4 class='text-center text-default' id='enterZipCaption'>Enter Zipcode</h4>
+        </div>
+
+        <div class='row form-group; form-inline'>
+            <input type="text" name='zipcode' id='zipcode' class='form-control' placeholder='Zipcode'/>
+            <select class='form-control' name="unit" id="unit">
+                <option value='1' id='none' selected>None</option>
+                <option value='2' id='metric'>Metric</option>
+                <option value='3' ie='imperial'>Imperial</option>
+            </select>
+            <button class='btn btn-default' id='submitZip'>Get Weather</button>
+            <button class='btn btn-default' id='reset'>Reset</button>
+
+        </div>
+
+        <div class='container'>
+            <div class='row' id='currentConditions'></div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div id='showIcon'>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div id='show'>
+                    </div>
+                </div>
+            </div>
+            <div id='lineBreak'></div>
+        </div>
+
+        <div class='container'>
+
+            <div class='row' id='fiveDayHeader'></div>
+            <div class='row' id='fiveDayForecast'>
+
+                <div class='col-md-2'>
+                    <div id='day1'></div>
+                    <div id='iconDay1'></div>
+                    <div id='minMax1'></div>
+                </div>
+
+                <div class='col-md-3'>
+                    <div id='day2'></div>
+                    <div id='iconDay2'></div>
+                    <div id='minMax2'></div>
+                </div>
+
+                <div class='col-md-2'>
+                    <div id='day3'></div>
+                    <div id='iconDay3'></div>
+                    <div id='minMax3'></div>
+                </div>
+
+                <div class='col-md-3'>
+                    <div id='day4'></div>
+                    <div id='iconDay4'></div>
+                    <div id='minMax4'></div>
+                </div>
+
+                <div class='col-md-2'>
+                    <div id='day5'></div>
+                    <div id='iconDay5'></div>
+                    <div id='minMax5'></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class='footer navbar-fixed-bottom'>
+        <div class='row text-center'>
+            <p style='background-color:#133c7c; color:white'>2018 Copyright &copy Matt Beard, WeatherPath</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>
